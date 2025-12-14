@@ -1,0 +1,74 @@
+body {
+    background-color: #dbddffbe;
+}
+section {
+    width: 34rem;
+    margin: 5rem auto;
+}
+#createAccount {
+    cursor: pointer;
+    color: #505cff;
+}
+.sign-in {
+    border: 1px solid  #909090ae;
+    box-shadow: 2px 2px 10px #aaaaaa93;
+    background-color: #fff;
+}
+#signupForm {
+    border: 1px solid  #909090ae;
+    box-shadow: 2px 2px 10px #aaaaaa93;
+    background-color: #fff;  
+    display: none;  
+}
+img {
+    width: 8rem;
+}
+.primary-link {
+    text-decoration: none;
+}
+.primary-link:hover {
+    color: rgb(93, 93, 93);
+    text-decoration: underline;
+}
+
+input {
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000;
+}
+button {
+    width: 8rem;
+    height: 2.2rem;
+    border: none;
+    color: #fff;
+    background-color: #2b39fa;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 0;
+}
+button:hover {
+    background-color: #1220e3;
+}
+#error {
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: red;
+    display: none;
+}
+@media screen and (max-width: 764px) {
+    section {
+        width: 28rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    section {
+        width: 24rem;
+    }
+}
+@media screen and (max-width: 455px) {
+    section {
+        width: 20rem;
+    }
+}

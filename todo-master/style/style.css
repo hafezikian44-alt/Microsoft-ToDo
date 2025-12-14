@@ -1,0 +1,207 @@
+
+.header__input {
+    max-width: 30rem;
+   
+}
+a {
+    text-decoration: none;
+    
+}
+h1:hover {
+    text-decoration: underline;
+}
+.main-bg {
+    background-color: #e6e6e659;
+}
+.user__btn {
+    width: 3.3rem;
+    height: 2.5rem;
+}
+.user__btn:hover {
+    background-color: #0c58c9;
+}
+.user__btn--content {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+}
+#asideLeft {
+    width: 18rem;
+    min-height: 93vh;
+    background-color: white;
+    position: relative;
+    border-right: 1px solid #d8d8d8;
+    box-shadow: 1px 10px 10px rgba(143, 201, 248, 0.514);
+}
+#asideRight {
+    width: 30rem;
+    min-height: 93vh;
+    background-color: white;
+    border-left: 1px solid #d8d8d8;
+    box-shadow: 1px 10px 10px rgba(143, 201, 248, 0.514);
+    display: none;
+}
+#Suggestion {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#todoDetails {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.list-items:hover {
+    background-color: #d8d8d8;
+    border-left: 4px solid rgb(38, 96, 255);
+}
+
+.aside__input {
+    outline: none;
+}
+.aside__footer {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex; justify-content: space-around;
+    align-items: center;
+    
+}
+.body-btn:hover {
+    background-color: #fff;
+}
+#showAsideBtn{
+    display: none;
+}
+#taskInput {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+} 
+#todoContent {
+    width: 100%;
+    display: none;
+    border: 1px solid #b6b6b663;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.task-input {
+     box-shadow: 1px 1px 10px #c9c9c9;
+}
+.todo {
+    background-color: #fff;
+    padding: 12px;
+    border: 1px solid #b3b3b38a;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px #c9c9c983;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.todo:hover {
+    background-color: rgba(129, 173, 255, 0.199);
+}
+#createTodoBtn :disabled {
+    cursor: not-allowed;
+}
+
+#todoContaner {
+    display: flex;
+    flex-direction: column;
+    margin-top:1rem;
+    overflow-y: auto;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+.star-checkbox input {
+  display: none; 
+}
+
+.star {
+  font-size: 28px;
+  cursor: pointer;
+  color: #1d6af8;
+  transition: 0.3s;
+}
+
+.star::before {
+  content: "☆"; 
+}
+
+.star-checkbox input:checked + .star::before {
+  content: "★"; 
+  color: #1d6af8;
+}
+
+
+.circle-container input {
+  display: none;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.circle-container input:checked + .circle {
+  background: #555;
+}
+.outline-none {
+    outline: none;
+}
+.border-none {
+    border: none;
+}
+.border-bottem {
+    border: 0;
+    border-bottom: 1px solid rgba(191, 191, 191, 0.43);
+}
+.details-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1400px){
+    
+}
+@media screen and (max-width: 1200px){
+    .header__input {
+        width: 22rem;
+    }
+}
+@media screen and (max-width: 992px){
+    .header__input {
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 768px){
+    #asideLeft {
+        display: none;
+        
+    }
+}
+@media screen and (max-width: 576px){
+    
+}

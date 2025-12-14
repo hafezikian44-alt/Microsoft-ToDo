@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/icons8-microsoft-to-do-app-48.png">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section>
+        <div class="sign-in d-flex flex-column justify-content-start p-5 gap-4">
+            <img src="assets/images/LOGO.png" alt="">
+            <h2>Sign in</h2>
+            <input id="emailInput" type="text" placeholder="Email, phone, or skype">
+            <span>No account?<span id="createAccount" class="primary-link">Create one!</span></span>
+            <a class="primary-link" href="">Can’t access your account?</a>
+            <button onclick="signIn()">Next</button>
+        </div>
+        <div id="signupForm" class="p-5 flex-column gap-2 mt-4">
+            <h2>Sign up</h2>
+            <p id="error">Email is not found!</p>
+            <input id="userNameInput" type="text" placeholder="Username">
+            <input id="signupEmailInput" type="text" placeholder="Email, phone, or skype">
+            <button class="mt-4" onclick="signUp()">Next</button>
+        </div>
+    </section>
+
+
+    <script src="scripts/bootstrap.bundle.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

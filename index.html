@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft todo</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/icons8-microsoft-to-do-app-48.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <header class="d-flex align-items-center justify-content-between gap-2 mx-auto mb-5 pb-5" style="width: 85%; padding-top: 2rem;">
+        <div id="mobileMenuBtn">
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg></span>
+        </div>
+        <div class=" d-flex  align-items-center gap-3">
+                <div style="width: 7rem;">
+                    <a href=""><img class="w-100" src="assets/images/LOGO.png" alt="logo"></a>
+                </div>
+                <ul id="headerList" class="  flex-row list-unstyled gap-3 align-items-center mx-2 my-0">
+                    <li class="item"><a class="link-style" href="">
+                        Microsoft 365
+                    </a></li>
+                    <li class="item"><a class="link-style" href="">
+                        Teams
+                    </a></li>
+                    <li class="item"><a class="link-style" href="">
+                        Copilot
+                    </a></li>
+                    <li class="item"><a class="link-style" href="">
+                        Windows
+                    </a></li>
+                    <li class="item"><a class="link-style" href="">
+                        Surface
+                    </a></li>
+                    <li class="d-none d-lg-inline-block item"><a class="link-style" href="">
+                        Xbox
+                    </a></li>
+                    <li class="d-none d-lg-inline-block item"><a class="link-style" href="">
+                        Deals
+                    </a></li>
+                    <li class="d-none d-xl-inline-block item"><a class="link-style" href="">
+                        Small Business
+                    </a></li>
+                    <li class="d-none d-xl-inline-block item"><a class="link-style" href="">
+                        Support
+                    </a></li>
+                    
+                    <div class="dropdown d-inline-block d-xl-none">
+                        <a class=" dropdown-toggle text-decoration-none text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class=""><a class="dropdown-item" href="#">Support</a></li>
+                            <li class=""><a class="dropdown-item" href="#">Small Business</a></li>
+                            <li class="d-block d-lg-none"><a class="dropdown-item" href="#">Deals</a></li>
+                            <li class="d-block d-lg-none"><a class="dropdown-item" href="#">Xbox</a></li>
+                            <li class="d-none d"><a class="dropdown-item" href="#">Surface</a></li>
+                            <li class="d-none d"><a class="dropdown-item" href="#">Windows</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            
+        <div class="d-flex justify-content-end gap-3 align-items-center w-100">
+            <div id="AllMicrosoftBtn">
+                <span class="header-link">All Microsoft</span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                    <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+                  </svg></span>
+                <div id="AllMicrosoftSection">
+                    <div class="d-flex flex-wrap p-4">
+                        <div class="flex-grow-1" style="flex-basis: 200;">
+                            <h6 class="mb-4">Software</h6>
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Windows Apps</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">AI</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Outlook</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">OneDrive</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Teams</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">OneNote</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Edge</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Moving from Skype to Teams</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-grow-1" style="flex-basis: 200;">
+                            <h6 class="mb-4">PCs & Devices</h6>
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Computerrs</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Shop Xbox</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Accessories</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">VR & mixed reality</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Certified Refurbished</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Trade-in for cash</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-grow-1" style="flex-basis: 200;">
+                            <h6 class="mb-4">Entertainment</h6>
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Xbox Game pass Ultimate</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">PC Game Pass</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">Xbox games</a></li>
+                                <li><a class="text-decoration-none text-secondary list-font-size" href="">PC games</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-grow-1" style="flex-basis: 200;">
+                            <h6 class="mb-4">Business</h6>
+                                <ul class="list-unstyled d-flex flex-column gap-4">
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Cloud</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Security</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Dynamics 365</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft 365</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Power Platform</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Teams</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft 365 Copilot</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Small Business</a></li>
+                                </ul>
+                            </div>
+                            <div class="flex-grow-1" style="flex-basis: 200;">
+                                <h6 class="mb-4">Developer & IT</h6>
+                                <ul class="list-unstyled d-flex flex-column gap-4">
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Azure</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Developer</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Learn</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Support for AI marketplace apps</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Tech Community</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Marketplace</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Marketplace Rewards</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Visual Studio</a></li>
+                                </ul>
+                            </div>
+                            <div class="flex-grow-1" style="flex-basis: 200;">
+                                <h6 class="mb-4">Other</h6>
+                                <ul class="list-unstyled d-flex flex-column gap-4">
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Rewards</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Free downloads & security</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Education</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Gift cards</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Licensing</a></li>
+                                    <li><a class="text-decoration-none text-secondary list-font-size" href="">Unlocked stories</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="AllMicrosoftSection-footer">
+                        <a class="text-decoration-none text-dark" href="">View Sitemap
+                            <span></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="searchBtn">
+                <span class="header-link">Search</span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg></span>
+            </div>
+            <div id="searchSection">
+                <div class="searchbox d-flex">
+                    <input class="searchSection-input" type="text" placeholder="Search or ask a question">
+                    <button class="border-0 bg-light px-2">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg></span></button>
+                </div>
+                <button id="cancelSearchBtn">Cancel</button>
+            </div>
+            <div id="cartBtn">
+                <a class="text-decoration-none text-dark" href="">
+                <span class="header-link">Cart</span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg></span>
+                </a>
+            </div>
+            <a id="signInBtn" class="text-decoration-none text-dark" href="todo-list-sign-in/index.html">
+                <div class="d-flex align-items-center gap-2">
+                    <span class="header-link">Sign in</span>
+                    <div class="sign-in-icon">
+                        <span class=""><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                          </svg></span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+       
+    </header>
+
+    <section id="mobileList">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item" aria-current="true">Microsoft 365</a>
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item">Teams</a>
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item">Copilot</a>
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item">Windows</a>
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item">Surface</a>
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item">Xbox</a>
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item">Black Friday deals</a>
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item">Small Business</a>
+            <a href="#" class="list-group-item list-group-item-action mobile-list-item">support</a>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mobile-list-item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Software
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body p-0">
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mobile-list-item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      PCs & Devices
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0">
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mobile-list-item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Entertainment
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0">
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mobile-list-item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                      Business
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0">
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mobile-list-item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                      Developer  & IT
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0">
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed mobile-list-item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                      Other
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0">
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                        <a href="#" class="list-group-item list-group-item-action mobile-list-item mobile-list-accardion">support</a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="list-group-item list-group-item-action mobile-list-item">support</a>
+              </div>
+
+        </div>
+    </section>
+
+
+    <main id="mainSection">
+        <div class="container text-center">
+            <div class="row gx-5">
+                <div class="col-3 text-1 ">
+                    <img class="w-100 mt-5 d-none d-xl-inline-block" src="assets/images/welcome-left.png" alt="">
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center gap-4">
+                    <div  style="width: 6rem;"><img class="w-100" src="assets/images/todo-logo (1).png" alt=""></div>
+                    <div>
+                        <h1 class="fw-lighter mb-4">Microsoft To Do</h1>
+                        <p class="fw-bold fs-3 text-1">To Do gives you focus, from work to play.</p>
+                    </div>
+                    <div class="d-xl-none" style="width: 14rem; margin: 2rem;">
+                        <img class="w-100" src="assets/images/welcome-center (1).png" alt="">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a class="get-start-btn" href="todo-list-sign-in/index.html">Get started</a>
+                        <button class="learn-more-btn">Learn more</button>
+                    </div>
+                    <div>
+                        <p class="center-text">Download To Do</p>
+                        <div class="d-flex justify-content-center align-items-center gap-2">
+                            <button class="social-btn"><span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-android2" viewBox="0 0 16 16">
+                                <path d="m10.213 1.471.691-1.26q.069-.124-.048-.192-.128-.057-.195.058l-.7 1.27A4.8 4.8 0 0 0 8.005.941q-1.032 0-1.956.404l-.7-1.27Q5.281-.037 5.154.02q-.117.069-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.7 3.7 0 0 0 3.5 5.02h9q0-1.125-.623-2.072a4.27 4.27 0 0 0-1.664-1.476ZM6.22 3.303a.37.37 0 0 1-.267.11.35.35 0 0 1-.263-.11.37.37 0 0 1-.107-.264.37.37 0 0 1 .107-.265.35.35 0 0 1 .263-.11q.155 0 .267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264m4.101 0a.35.35 0 0 1-.262.11.37.37 0 0 1-.268-.11.36.36 0 0 1-.112-.264q0-.154.112-.265a.37.37 0 0 1 .268-.11q.155 0 .262.11a.37.37 0 0 1 .107.265q0 .153-.107.264M3.5 11.77q0 .441.311.75.311.306.76.307h.758l.01 2.182q0 .414.292.703a.96.96 0 0 0 .7.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182q0 .414.292.703a.97.97 0 0 0 .71.288.97.97 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76q.436 0 .749-.308.31-.307.311-.75V5.365h-9zm10.495-6.587a.98.98 0 0 0-.702.278.9.9 0 0 0-.293.685v4.063q0 .406.293.69a.97.97 0 0 0 .702.284q.42 0 .712-.284a.92.92 0 0 0 .293-.69V6.146a.9.9 0 0 0-.293-.685 1 1 0 0 0-.712-.278m-12.702.283a1 1 0 0 1 .712-.283q.41 0 .702.283a.9.9 0 0 1 .293.68v4.063a.93.93 0 0 1-.288.69.97.97 0 0 1-.707.284 1 1 0 0 1-.712-.284.92.92 0 0 1-.293-.69V6.146q0-.396.293-.68"/>
+                                </svg>
+                            </span></button>
+                            <button class="social-btn"><span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows" viewBox="0 0 16 16">
+                                <path d="M6.555 1.375 0 2.237v5.45h6.555zM0 13.795l6.555.933V8.313H0zm7.278-5.4.026 6.378L16 16V8.395zM16 0 7.33 1.244v6.414H16z"/>
+                                </svg>
+                            </span></button>
+                            <button class="social-btn"><span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                                </svg>
+                            </span></button>
+                          
+                        </div>
+                        <br>
+                       <a class="center-text link-style " href="">Terms of use for To Do</a>
+                    </div>
+                </div>
+                <div class="col-3 text-1 ">
+                    <img class="w-75 d-none d-xl-inline-block" src="assets/images/welcome-right.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="d-flex flex-column mx-auto mt-5" style="width: 85%; padding-top: 2rem;">
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="flex-grow-1" style="flex-basis: 200;">
+                <h6>What's new</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Surface Pro</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Surface Laptop</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Surface Laptop Studio 2</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Copilot for organizations</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Copilot for personal use</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">AI in Windows</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Explore Microsoft products</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Windows 11 apps</a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow-1" style="flex-basis: 200;">
+                <h6>Microsoft Store</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Account profile</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Download Center</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Store support</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Returns</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Order tracking</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Certified Refurbished</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Store Promise</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Flexible Payments</a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow-1" style="flex-basis: 200;">
+                <h6>Education</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft in education</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Devices for education</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Teams for Education</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft 365 Education</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">How to buy for your school</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Educator training and development</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Deals for students and parents</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">AI for education</a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow-1" style="flex-basis: 200;">
+                <h6>Business</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Cloud</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Security</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Dynamics 365</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft 365</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Power Platform</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Teams</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft 365 Copilot</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Small Business</a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow-1" style="flex-basis: 200;">
+                    <h6>Developer & IT</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Azure</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Developer</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Learn</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Support for AI marketplace apps</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Tech Community</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Microsoft Marketplace</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Marketplace Rewards</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Visual Studio</a></li>
+                    </ul>
+                </div>
+                <div class="flex-grow-1" style="flex-basis: 200;">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Careers</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">About Microsoft</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Company news</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Privacy at Microsoft></a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Investors</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Diversity and inclusion</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Accessibility</a></li>
+                        <li><a class="text-decoration-none text-secondary list-font-size" href="">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between flex-wrap mt-4">
+                <div class="d-flex flex-wrap mb-5 mb-xl-0 gap-4">
+                    <div><a class="text-decoration-none text-secondary list-font-size" href="">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                        </svg></span>
+                        <span>English (United States)</span>
+                    </a></div>
+                    <div><a class="text-decoration-none text-secondary list-font-size" href="">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"/>
+                        </svg></span>
+                        <span>Your Privacy Choices</span>
+                    </a></div>
+                    <div><a class="text-decoration-none text-secondary list-font-size" href="">
+                        <span>Consumer Health Privacy</span>
+                    </a></div>
+                </div>
+                <div>
+                    <ul class="list-unstyled d-flex gap-5 flex-wrap">
+                        <li><a class="text text-decoration-none text-secondary list-font-size" href="">Sitemap</a></li>
+                        <li><a class="text text-decoration-none text-secondary list-font-size" href="">Contact Microsoft</a></li>
+                        <li><a class="text text-decoration-none text-secondary list-font-size" href="">Privacy</a></li>
+                        <li><a class="text text-decoration-none text-secondary list-font-size" href="">Terms of use</a></li>
+                        <li><a class="text text-decoration-none text-secondary list-font-size" href="">Trademarks</a></li>
+                        <li><a class="text text-decoration-none text-secondary list-font-size" href="">Safety & eco</a></li>
+                        <li><a class="text text-decoration-none text-secondary list-font-size" href="">Recycling</a></li>
+                        <li><a class="text text-decoration-none text-secondary list-font-size" href="">About our ads</a></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
